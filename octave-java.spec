@@ -16,7 +16,7 @@ Conflicts:	octave-forge <= 20090607
 Requires:	octave >= 3.2.0
 BuildRequires:	octave-devel >= 3.2.0, MesaGL-devel, MesaGLU-devel
 BuildRequires:	texinfo
-BuildRequires:	classpath-devel, jdk
+BuildRequires:	classpath-devel, java-1.6.0
 
 %description
 Java interface for Octave.
