@@ -34,8 +34,8 @@ export OCT_ARCH_PREFIX=%{buildroot}%{_libdir}/octave/packages
 octave -q --eval "pkg prefix $OCT_PREFIX $OCT_ARCH_PREFIX; pkg install -verbose -nodeps -local %{pkgname}-%{version}.tar.gz"
 
 tar zxf %SOURCE0 
-mv %{pkgname}-%{version}/COPYING .
-mv %{pkgname}-%{version}/DESCRIPTION .
+mv %{pkgname}/COPYING .
+mv %{pkgname}/DESCRIPTION .
 
 %clean
 %__rm -rf %{buildroot}
